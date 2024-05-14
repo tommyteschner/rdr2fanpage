@@ -1,0 +1,557 @@
+<!-- Tommy Teschner, Database Systems, 04/09/24 -->
+<!-- index.html -->
+<!-- Red Dead Redemption 2 Fan Page -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- set title -->
+      <title>RDR2 Fan Page</title>
+
+      <!-- set favicon -->
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+      <!-- get various fonts -->
+      <link href="https://db.onlinewebfonts.com/c/ab21a97b9cae2e116d8d1473baefc9f0?family=RDR+Lino+Regular" rel="stylesheet" />
+      <link href="https://db.onlinewebfonts.com/c/2dfd1aef90d202fb927ae72f5e1fd6d6?family=Hapna+Slab+Serif+W00+Medium" rel="stylesheet" />
+
+      <!-- define .css file to be used in the html page -->
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- magnify js stylesheet -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.min.css"
+         integrity="sha512-wzhF4/lKJ2Nc8mKHNzoFP4JZsnTcBOUUBT+lWPcs07mz6lK3NpMH1NKCKDMarjaw8gcYnSBNjjllN4kVbKedbw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <!-- videoJS stylesheet -->
+      <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+   </head>
+   <body>
+      <!-- For displaying the autoplay video and graphics first seen in the html page -->
+      <div class="container">
+         <video id="video" width="99%" height="auto" playsinline loop autoplay muted>
+            <source src="images/video.mp4" type="video/mp4" />
+         </video>
+         <!-- graphic -->
+         <img src="images/rdr2 fanpage.png" />
+         <div class="overlay">
+            <!-- button that moves to a different part of the page on clicked-->
+            <button onclick="location.href='#What_is_RDR2?'" type="button" style="display: block" class="button" id="details">DETAILS</button>
+         </div>
+      </div>
+
+      <!-- spacer to shift elements down -->
+      <div id="What_is_RDR2?" style="width: 200px; height: 250px; margin-right: 0px"></div>
+
+      <!-- what is RDR2?, header, description of what RDR2 is, and external link to the RDR2 wiki -->
+      <div id="down">
+         <h1>What is Red Dead Redemption II?</h1>
+         <p>
+            Red Dead Redemption 2 (stylized as Red Dead Redemption II) is a western-themed action-adventure video game developed and published by Rockstar Games. Set in a fictional recreation of the American Old West in 1899, Red Dead Redemption 2 focuses
+            on the life of Arthur Morgan and his position in the notorious Van der Linde gang. The game follows the gang's decline as they are pursued by lawmen, fellow gangs and Pinkerton agents. The narrative revolves around the characters of Dutch van
+            der Linde, John Marston and Micah Bell in addition to Morgan.
+
+            <br />
+            <a href="https://reddead.fandom.com/wiki/Red_Dead_Redemption_2" target="_blank">
+               <sub>—The Red Dead Wiki</sub>
+            </a>
+         </p>
+      </div>
+
+      <!-- id declared here for later jumping to this point -->
+      <br id="The_Van_der_Linde_Gang" />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- The van der linde gang div -->
+      <div class="line-image" id="vdlLabel">
+         <div class="line-text">
+            <h2>The Van der Linde Gang</h2>
+         </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <!-- Table for displaying each member of the van der linde gang in RDR2
+      each table element has a gif, some text, and links to the rdr2 wiki when clicked -->
+      <div class="tbl-container">
+         <table>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Dutch_van_der_Linde" target="_blank">
+                     <img class="gang" src="images/dutch.gif" />
+                     <h3>Dutch van der Linde</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Arthur_Morgan" target="_blank">
+                     <img class="gang" src="images/arthur.gif" />
+                     <h3>Arthur Morgan</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/John_Marston" target="_blank">
+                     <img class="gang" src="images/john.gif" />
+                     <h3>John Marston</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Micah_Bell" target="_blank">
+                     <img class="gang" src="images/micah.gif" />
+                     <h3>Micah Bell</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Sadie_Adler" target="_blank">
+                     <img class="gang" src="images/sadie.gif" />
+                     <h3>Sadie Adler</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Charles_Smith" target="_blank">
+                     <img class="gang" src="images/charles.gif" />
+                     <h3>Charles Smith</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Uncle" target="_blank">
+                     <img class="gang" src="images/uncle.gif" />
+                     <h3>Uncle</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Hosea_Matthews" target="_blank">
+                     <img class="gang" src="images/hosea.gif" />
+                     <h3>Hosea Matthews</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Javier_Escuella" target="_blank">
+                     <img class="gang" src="images/javier.gif" />
+                     <h3>Javier Escuella</h3>
+                  </a>
+               </th>
+            </tr>
+         </table>
+
+         <table style="display: none" id="The_Van_der_Linde_Gang_Full_List">
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Lenny_Summers" target="_blank">
+                     <img class="gang" src="images/lenny.gif" />
+                     <h3>Lenny Summers</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Abigail_Marston" target="_blank">
+                     <img class="gang" src="images/abigail.gif" />
+                     <h3>Abigail Roberts</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Sean_MacGuire" target="_blank">
+                     <img class="gang" src="images/sean.gif" />
+                     <h3>Sean MacGuire</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Susan_Grimshaw" target="_blank">
+                     <img class="gang" src="images/grimshaw.gif" />
+                     <h3>Susan Grimshaw</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Bill_Williamson" target="_blank">
+                     <img class="gang" src="images/bill.gif" />
+                     <h3>Bill Williamson</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Leopold_Strauss" target="_blank">
+                     <img class="gang" src="images/strauss.gif" />
+                     <h3>Leopold Strauss</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Simon_Pearson" target="_blank">
+                     <img class="gang" src="images/pearson.gif" />
+                     <h3>Simon Pearson</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Karen_Jones" target="_blank">
+                     <img class="gang" src="images/karen.gif" />
+                     <h3>Karen Jones</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Jack_Marston" target="_blank">
+                     <img class="gang" src="images/jack.gif" />
+                     <h3>Jack Marston</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Mary-Beth_Gaskill" target="_blank">
+                     <img class="gang" src="images/mary.gif" />
+                     <h3>Mary-Beth Gaskill</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Tilly_Jackson" target="_blank">
+                     <img class="gang" src="images/tilly.gif" />
+                     <h3>Tilly Jackson</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Molly_O%27Shea" target="_blank">
+                     <img class="gang" src="images/molly.gif" />
+                     <h3>Molly O'Shea</h3>
+                  </a>
+               </th>
+            </tr>
+            <tr>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Orville_Swanson" target="_blank">
+                     <img class="gang" src="images/reverend.gif" />
+                     <h3>Reverend Swanson</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Josiah_Trelawny" target="_blank">
+                     <img class="gang" src="images/trelawny.gif" />
+                     <h3>Josiah Trewlany</h3>
+                  </a>
+               </th>
+               <th>
+                  <a href="https://reddead.fandom.com/wiki/Kieran_Duffy" target="_blank">
+                     <img class="gang" src="images/kieran.gif" />
+                     <h3>Kieran Duffy</h3>
+                  </a>
+               </th>
+            </tr>
+         </table>
+
+         <br />
+
+         <!-- buttons for showing and hiding tables, onclick jumps to locations -->
+
+         <button onclick="location.href='#The_Van_der_Linde_Gang_Full_List'" type="button" style="display: block" class="button" id="show-list">SHOW FULL LIST</button>
+
+         <button onclick="location.href='#The_Van_der_Linde_Gang'" type="button" style="display: none" class="button" id="hide-list">HIDE FULL LIST</button>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Story summary div -->
+      <div class="line-image" id="vdlLabel">
+         <div class="line-text">
+            <h2>Story Summary</h2>
+         </div>
+      </div>
+
+      <br />
+
+      <!-- Our list, displays the story elements of RDR2, chapter 1 - 6, ep 1 - 2 -->
+      <ul>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_1:_Colter" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter1.png" />
+                  <h4>Chapter 1</h4>
+                  <p1
+                     >After a failed robbery, the gang have fled from Blackwater into the Grizzly Mountains, but a late spring storm has left them half frozen and starving. They hole up in an abandoned mining town to lick their wounds and await a break in
+                     the weather.</p1
+                  >
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_2:_Horseshoe_Overlook" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter2.png" />
+                  <h4>Chapter 2</h4>
+                  <p1>After a break in the weather, the gang have headed down from the mountains, and are now hiding at Horseshoe Overlook.</p1>
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_3:_Clemens_Point" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter3.png" />
+                  <h4>Chapter 3</h4>
+                  <p1
+                     >The gang got run out of Valentine after an altercation with the railway magnate, Leviticus Cornwall, who has grown tired of having his trains robbed by gangs of outlaws. Afraid that the routes westwards were being watched by
+                     Pinkerton agents, the gang moved south and east and are now hiding at Clemens Cove, near the town of Rhodes.</p1
+                  >
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_4:_Saint_Denis" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter4.png" />
+                  <h4>Chapter 4</h4>
+                  <p1>Things ended poorly in Rhodes. The Pinkertons showed up again, and little Jack Marston was kidnapped.</p1>
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_5:_Guarma" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter5.png" />
+                  <h4>Chapter 5</h4>
+                  <p1>The bank robbery in Saint Denis was a disaster. The gang has been almost destroyed, several members were killed and arrested. Everything seemed lost.</p1>
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Chapter_6:_Beaver_Hollow" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/chapter6.png" />
+                  <h4>Chapter 6</h4>
+                  <p1>The gang, or what is left of it were reunited at Lakay, but was quickly assaulted by a squad of Pinkertons.</p1>
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Epilogue,_Part_1:_Pronghorn_Ranch" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/ep1.png" />
+                  <h4>Epilogue - Part 1</h4>
+                  <p1>John takes a job at Pronghorn Ranch and tries to escape his past indiscretions, while learning the skills of ranching.</p1>
+               </div>
+            </a>
+         </li>
+         <li>
+            <a href="https://reddead.fandom.com/wiki/Missions_in_Redemption_2#Epilogue,_Part_2:_Beecher's_Hope" target="_blank">
+               <div style="background-color: rgba(25, 25, 25, 1)" class="box">
+                  <img class="imgtbl" src="images/ep2.png" />
+                  <h4>Epilogue - Part 2</h4>
+                  <p1>In an effort to give Abigail the life she has always wanted, John has bought a farm of his own. He is trying to become a family man and rancher, with help and hindrance from some old friends.</p1>
+               </div>
+            </a>
+         </li>
+      </ul>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- world map div -->
+      <div class="line-image" id="vdlLabel">
+         <div class="line-text">
+            <h2>World Map</h2>
+         </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <!-- For displaying the map -->
+      <div class="map">
+         <div class="card">
+            <a href="images/fullimage.jpeg">
+               <!-- class = "zoom" is how the js script works -->
+               <img class="zoom" src="images/thumbnail.jpeg" alt="" />
+            </a>
+         </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- Community Highlight div -->
+      <div class="line-image" id="vdlLabel">
+         <div class="line-text">
+            <h2>Community Highlight</h2>
+         </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <!-- the video player, uses VideoJS -->
+      <div class="communityclip">
+         <video id="clip" class="vjs-matrix video-js vjs-big-play-centered" muted controls data-setup="{}">
+            <source src="images/clip.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+               To view this video please enable JavaScript, and consider upgrading to a web browser that
+               <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+         </video>
+      </div>
+
+      <br />
+
+      <!-- the like buttons -->
+      <div class="likebuttons">
+         <button class="button" id="like">LIKE</button>
+         <button class="button" id="dislike">DISLIKE</button>
+      </div>
+
+      <!-- get good honor and bad hnor sounds to be later used in scripts-->
+      <audio id="goodHonorSound" src="sound/highhonor.m4a"></audio>
+      <audio id="badHonorSound" src="sound/lowhonor.m4a"></audio>
+
+      <!-- good honor and bad honor images loaded, initially hidden -->
+      <div id="goodhonor">
+         <img src="images/goodhonor.png" />
+      </div>
+
+      <div id="badhonor">
+         <img src="images/badhonor.png" />
+      </div>
+      <p>Submit your own clips for a chance to be featured on the RDR2 Fan Page!</p>
+
+      <br />
+      <br />
+      <br />
+
+      <!-- submit div -->
+      <div class="line-image" id="vdlLabel">
+         <div class="line-text">
+            <h2>Submit</h2>
+         </div>
+      </div>
+
+      <br />
+      <br />
+
+      <!-- form for getting name, email, and message with link to clip -->
+      <div class="form">
+         <form action="#container">
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="text" id="email" name="email" placeholder="Email" required />
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Please include a link to your clip in the message" required></textarea>
+            <input type="submit" />
+         </form>
+      </div>
+
+      <!-- Various script elements -->
+      <script>
+         // get variables
+         const hidabletbl = document.querySelector("#The_Van_der_Linde_Gang_Full_List");
+
+         const showListBtn = document.querySelector("#show-list");
+         const hideListBtn = document.querySelector("#hide-list");
+
+         const like = document.querySelector("#like");
+         const dislike = document.querySelector("#dislike");
+
+         const goodHonor = document.querySelector("#goodhonor");
+         const badHonor = document.querySelector("#badhonor");
+
+         // events on click of show list button
+         // show the table that was hidden on launch
+         showListBtn.addEventListener("click", () => {
+            hidabletbl.style.display = "block";
+            showListBtn.style.display = "none";
+            hideListBtn.style.display = "block";
+         });
+
+         // events on click of hide list button
+         // hide the table that was hidden on launch
+         hideListBtn.addEventListener("click", () => {
+            hidabletbl.style.display = "none";
+            showListBtn.style.display = "block";
+            hideListBtn.style.display = "none";
+         });
+
+         // events on click of like button
+         like.addEventListener("click", () => {
+            playGoodHonor();
+            goodHonor.style.display = "block";
+            const myTimeout = setTimeout(goodHonorOff, 3500);
+         });
+
+         // events on click of dislike button
+         dislike.addEventListener("click", () => {
+            playBadHonor();
+            badHonor.style.display = "block";
+            const myTimeout = setTimeout(badHonorOff, 3500);
+         });
+
+         // declaring audio variables
+         var badHonorAudio = document.getElementById("badHonorSound");
+         var goodHonorAudio = document.getElementById("goodHonorSound");
+
+         // set audio volumes to 50%
+         goodHonorAudio.volume = 0.5;
+         badHonorAudio.volume = 0.5;
+
+         // for hiding the good honor popup
+         function goodHonorOff() {
+            goodHonor.style.display = "none";
+         }
+
+         // for hiding the bad honor popup
+         function badHonorOff() {
+            badHonor.style.display = "none";
+         }
+
+         // play good honor sound
+         function playGoodHonor() {
+            goodHonorAudio.play();
+         }
+
+         // play bad honor sound
+         function playBadHonor() {
+            badHonorAudio.play();
+         }
+      </script>
+      <!-- Script for jquery -->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <!-- script for jquery/magnifying glass-->
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js"
+         integrity="sha512-YKxHqn7D0M5knQJO2xKHZpCfZ+/Ta7qpEHgADN+AkY2U2Y4JJtlCEHzKWV5ZE87vZR3ipdzNJ4U/sfjIaoHMfw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script>
+         // script for magnifying class js
+         $(document).ready(function () {
+            $(".zoom").magnify({
+               speed: 125,
+            });
+         });
+      </script>
+      <!-- Script for custom video player (videojs) -->
+      <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+   </body>
+</html>
